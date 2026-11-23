@@ -82,33 +82,66 @@
     line-height: 1.8;
   }
 
-  /* 表格 */
+ /* 表格美化與響應式設定 */
   .table-wrapper {
     width: 100%;
     overflow-x: auto;
+    margin: 16px 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #FFFFFF;
   }
 
   .table-wrapper table {
-    min-width: 560px;
     width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
   }
 
-  .content-section ul li {
-    line-height: 1.9;
-    margin-bottom: 8px;
+  .table-wrapper thead {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+  }
+
+  .table-wrapper th,
+  .table-wrapper td {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.6;
+    vertical-align: top;
+  }
+
+  .table-wrapper th {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* 欄寬比例設定：左側項目固定比例，右側說明留較寬空間 */
+  .table-wrapper th:first-child,
+  .table-wrapper td:first-child {
+    width: 34%;
+    font-weight: 600;
+    color: var(--primary-dark);
+  }
+
+  /* 斑馬紋與滑鼠懸停效果，提升閱讀辨識度 */
+  .table-wrapper tbody tr:nth-child(even) {
+    background-color: var(--background);
+  }
+
+  .table-wrapper tbody tr:hover {
+    background-color: #EDF5FA;
+  }
+
+  /* 移除最後一列底線，避免與外框重疊 */
+  .table-wrapper tbody tr:last-child td {
+    border-bottom: none;
   }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="../index.html">醫療品質與健康衛教資訊</a>
-      <nav class="main-nav" aria-label="主要導覽">
-        <a href="../index.html">首頁</a>
-      </nav>
-    </div>
-  </header>
-
   <main>
     <section class="disease-hero asthma-hero">
       <div class="container">
@@ -148,46 +181,46 @@
             <p>
               氣喘照護著重於追蹤治療品質及自我監測尖峰呼氣流速（PEF），以掌握病情穩定度。
             </p>
-	    <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>評估／檢測項目</th>
-                  <th>參考控制目標／公式說明</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>PEF 個人最佳值百分比</td>
-                  <td>清晨測量低於 80% 表示氣喘發作，需依醫囑調整用藥。</td>
-                </tr>
-                <tr>
-                  <td>PEF 早晚變異度</td>
-                  <td>變異度超過 20% 表示病情尚未穩定。</td>
-                </tr>
-                <tr>
-                  <td>成人 PEF 預估值公式（男）</td>
-                  <td>3.89 × 身高(cm) － 2.95 × 年齡(歲) ＋ 43.59 (L/min)</td>
-                </tr>
-                <tr>
-                  <td>成人 PEF 預估值公式（女）</td>
-                  <td>4.10 × 身高(cm) － 1.61 × 年齡(歲) － 173.55 (L/min)</td>
-                </tr>
-                <tr>
-                  <td>6-12歲兒童 PEF 預估值公式（男）</td>
-                  <td>9.35 × 年齡 ＋ 2.03 × 身高 ＋ 0.81 × 體重(kg) － 130.5 (L/min)</td>
-                </tr>
-                <tr>
-                  <td>6-12歲兒童 PEF 預估值公式（女）</td>
-                  <td>7.37 × 年齡 ＋ 1.68 × 身高 ＋ 1.28 × 體重(kg) － 98.87 (L/min)</td>
-                </tr>
-                <tr>
-                  <td>氣喘改善方案參加率與再入院率</td>
-                  <td>高收案率、出院14天內低再入院率及低急診就醫率，代表院所照護品質優良。</td>
-                </tr>
-              </tbody>
-            </table>
-	   </div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>評估／檢測項目</th>
+                    <th>參考控制目標／公式說明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PEF 個人最佳值百分比</td>
+                    <td>清晨測量低於 80% 表示氣喘發作，需依醫囑調整用藥。</td>
+                  </tr>
+                  <tr>
+                    <td>PEF 早晚變異度</td>
+                    <td>變異度超過 20% 表示病情尚未穩定。</td>
+                  </tr>
+                  <tr>
+                    <td>成人 PEF 預估值公式（男）</td>
+                    <td>3.89 × 身高(cm) － 2.95 × 年齡(歲) ＋ 43.59 (L/min)</td>
+                  </tr>
+                  <tr>
+                    <td>成人 PEF 預估值公式（女）</td>
+                    <td>4.10 × 身高(cm) － 1.61 × 年齡(歲) － 173.55 (L/min)</td>
+                  </tr>
+                  <tr>
+                    <td>6–12 歲兒童 PEF 預估值公式（男）</td>
+                    <td>9.35 × 年齡(歲) ＋ 2.03 × 身高(cm) ＋ 0.81 × 體重(kg) － 130.5 (L/min)</td>
+                  </tr>
+                  <tr>
+                    <td>6–12 歲兒童 PEF 預估值公式（女）</td>
+                    <td>7.37 × 年齡(歲) ＋ 1.68 × 身高(cm) ＋ 1.28 × 體重(kg) － 98.87 (L/min)</td>
+                  </tr>
+                  <tr>
+                    <td>氣喘改善方案參加率與再入院率</td>
+                    <td>高收案率、出院 14 天內低再入院率及低急診就醫率，代表院所照護品質優良。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p class="placeholder-note">
               ※ 以上公式與數值為國人參考標準，實際控制目標與試驗判定應由專科醫師評估。
@@ -297,5 +330,7 @@
       </div>
     </div>
   </main>
+
+
 </body>
 </html>

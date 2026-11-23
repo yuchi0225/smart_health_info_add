@@ -3,20 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="認識糖尿病、醫療品質指標、血糖管理、飲食運動及日常照護，提供民眾實用的健康衛教資訊。">
-    <title>糖尿病｜醫療品質與健康衛教資訊</title>
+  <meta name="description" content="認識糖尿病、控制糖尿病 ABC 指標、大小血管慢性合併症、醣化血紅素（HbA1c）監測意義、相關學會網站及日常照護提醒。">
+  <title>糖尿病｜醫療品質與健康衛教資訊</title>
   <link rel="stylesheet" href="../css/style.css">
-  
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="../index.html">醫療品質與健康衛教資訊</a>
-      <nav class="main-nav" aria-label="主要導覽">
-        <a href="../index.html">首頁</a>
-      </nav>
-    </div>
-  </header>
+
+  <!-- 糖尿病頁面專屬溫馨暖橘色系 -->
+  <style>
+    :root {
+      --primary: #F97316;
+      --primary-dark: #C2410C;
+      --primary-light: #FFF3E6;
+      --text: #3B2E26;
+      --muted: #78655A;
+      --border: #FAD6B8;
+      --background: #FFFBF7;
+    }
+
+    /* 主視覺 */
+    .diabetes-hero {
+      background: linear-gradient(120deg, #EA580C, #F97316);
+      color: #ffffff;
+    }
+
+    .diabetes-hero h1 {
+      color: #ffffff;
+    }
+
+    .diabetes-hero .eyebrow {
+      color: #FFEDD5;
+    }
+
+    .diabetes-hero .breadcrumb,
+    .diabetes-hero .breadcrumb a {
+      color: #ffffff;
+    }
+
+    .diabetes-hero .container > p {
+      color: #ffffff;
+    }
+
+    /* 區塊標題底線 */
+    .content-section h2 {
+      border-bottom-color: #FAD6B8;
+    }
+
+    /* 資訊卡片 */
+    .info-card,
+    .education-card {
+      border-color: #FAD6B8;
+    }
+
+    .info-card h3,
+    .education-card h3 {
+      color: #C2410C;
+    }
+
+    /* 側邊導覽 */
+    .side-nav a:hover,
+    .side-nav a:focus {
+      color: #C2410C;
+    }
+
+    /* 橘色提醒框 */
+    .diabetes-note {
+      padding: 15px 18px;
+      margin-top: 18px;
+      background: #FFF3E6;
+      border-left: 4px solid #F97316;
+      border-radius: 8px;
+      color: #3B2E26;
+      line-height: 1.8;
+    }
+
+    /* 表格 */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 16px;
+    }
+
+    .table-wrapper table {
+      min-width: 560px;
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      box-sizing: border-box;
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid #FAD6B8;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      box-sizing: border-box;
+      line-height: 1.7;
+    }
+
+    .table-wrapper th {
+      background: #FFF3E6;
+      color: #C2410C;
+      font-weight: 700;
+      border-bottom: 2px solid #F97316;
+    }
+
+    .table-wrapper th:nth-child(1),
+    .table-wrapper td:nth-child(1) {
+      width: 22%;
+    }
+
+    .table-wrapper th:nth-child(2),
+    .table-wrapper td:nth-child(2) {
+      width: 38%;
+    }
+
+    .table-wrapper th:nth-child(3),
+    .table-wrapper td:nth-child(3) {
+      width: 40%;
+    }
+  </style>
 
   <main>
     <section class="disease-hero diabetes-hero">
@@ -24,7 +133,7 @@
         <p class="breadcrumb"><a href="../index.html">首頁</a>／糖尿病</p>
         <p class="eyebrow">DISEASE INFORMATION</p>
         <h1>糖尿病</h1>
-        <p>認識糖尿病與日常照護，了解如何與醫療團隊共同管理健康，守護優質生活。</p>
+        <p>認識糖尿病與日常照護，掌握 ABC 控管指標、慢性合併症風險與醣化血紅素（HbA1c）監測意義，了解如何與醫療團隊共同管理健康。</p>
       </div>
     </section>
 
@@ -35,114 +144,105 @@
         <a href="#quality">醫療品質資訊</a>
         <a href="#education">健康教育</a>
         <a href="#visit">就醫與照護提醒</a>
-	<a href="#info">其他資訊</a>
+        <a href="#info">其他資訊</a>
       </aside>
 
       <div class="page-content">
         <section class="content-section" id="overview">
           <h2>疾病介紹</h2>
           <p>
-            糖尿病是由於胰臟分泌的胰島素不足或無法發揮正常功能，導致血液中葡萄糖濃度升高的一種慢性疾病。
-            常見類型包含第1型、第2型與妊娠糖尿病。發病初期多數人沒有明顯症狀，若未妥善控制，隨著病程進展
-            可能出現「三多一少」（多吃、多喝、多尿、體重減輕）、疲勞及視力模糊等情形。透過與醫療團隊配合，
-            積極管理健康，能有效延緩併發症發生。
+            糖尿病是一種需要長期管理的慢性疾病。一旦得了糖尿病，在每天的日常生活中，需要注意適當的飲食及控制血糖，注意血糖數值的高低，以避免其威脅生命並嚴重影響生活品質。血糖控制、規律追蹤及日常生活照護，都是糖尿病照護的重要部分。實際診斷與治療方式應由醫療專業人員依個人情況評估。
           </p>
+          <p>
+            糖尿病是全身血管系統的殺手，若病情控制不佳，可能帶來慢性合併症：
+          </p>
+
+          <div class="info-card">
+            <h3>糖尿病慢性合併症類型</h3>
+            <ul>
+              <li><strong>小血管病變：</strong>如視網膜病變、腎臟病變、神經病變，還會造成眼睛、腎臟、下肢血管等併發症，甚至造成失明、洗腎和截肢。</li>
+              <li><strong>大血管病變：</strong>又稱動脈硬化症；因為一旦病情控制不佳，易引起心臟病、中風。</li>
+            </ul>
+          </div>
+
+          <div class="diabetes-note">
+            <strong>小提醒：</strong>
+            長期血糖控制不佳會影響大小血管與多個器官系統，落實日常飲食、血糖監測與定期追蹤，有助於降低併發症風險。
+          </div>
         </section>
 
         <section class="content-section" id="quality">
           <h2>醫療品質資訊</h2>
-          <div class="info-card">
-  		<h3>糖尿病重要控制指標</h3>
-  		<p>
-  	  	  一般成人糖尿病患者可參考以下控制目標，
-    		  定期追蹤各項數值，了解疾病控制情形。
-  		</p>
- 	  <table>
-    	    <thead>
-      	      <tr>
-        	<th>檢查項目</th>
-        	<th>參考控制目標</th>
-              </tr>
-    	    </thead>
-     	    <tbody>
-              <tr>
-        	<td>糖化血色素（HbA1c）</td>
-        	<td>低於 7.0%</td>
-      	      </tr>
-      	      <tr>
-        	<td>空腹血糖</td>
-        	<td>80～130 mg/dL</td>
-              </tr>
-      	      <tr>
-        	<td>餐後 2 小時血糖</td>
-        	<td>低於 160 mg/dL</td>
-              </tr>
-              <tr>
-        	<td>血壓</td>
-        	<td>低於 140/90 mmHg</td>
-              </tr>
-              <tr>
-        	<td>低密度脂蛋白膽固醇（LDL-C）</td>
-        	<td>低於 100 mg/dL</td>
-              </tr>
-              <tr>
-        	<td>三酸甘油酯（TG）</td>
-         	<td>低於 150 mg/dL</td>
-              </tr>
-            </tbody>
-          </table>
+          <p>
+            民眾可透過官方醫療品質資訊，了解糖尿病相關照護指標及醫療院所資訊。
+            指標呈現的是部分照護資訊，解讀時仍應考量個人病情及其他醫療資訊。
+          </p>
 
-  <p class="placeholder-note">
-    ※ 以上為一般參考目標，實際控制標準應依個人年齡、
-    健康狀況及病情，由醫療專業人員進行個別化評估。
-  </p>
-</div>
           <div class="info-card">
-  		<h3>官方資訊與指標參考</h3>	
-  		<p>
- 	   	   糖尿病照護可參考糖化血色素（HbA1c）、
-    		   血壓、總膽固醇及三酸甘油酯等指標，
-    		   定期追蹤有助於了解疾病控制情形。
-   		    實際治療目標應由醫療專業人員依個人健康狀況評估。
-  		</p>
-  		<h4>相關官方資訊</h4>
-  		<ul>
-   		  <li>
-      			<a href="https://www.nhi.gov.tw/"
-         		target="_blank"
-         		rel="noopener noreferrer">
-        		衛生福利部中央健康保險署(可點擊)
-      			</a>
-    		 </li>
-    		 <li>
-       			<a href="https://www.hpa.gov.tw/"
-         		target="_blank"
-         		rel="noopener noreferrer">
-        		衛生福利部國民健康署(可點擊)
-      			</a>
-    		 </li>
-  		</ul>
-	</div>
+            <h3>控制糖尿病 ABC 活動與監測重點</h3>
+            <p>
+              美國糖尿病學會、美國心臟專科醫學會及美國糖尿病教育計畫三個重要學術團體，聯合推出「控制糖尿病 ABC 活動」，目的在提醒糖尿病人如要免除心血管疾病威脅，除了血糖控制，還要嚴格控管血壓及膽固醇（血脂肪）。
+            </p>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ABC 指標</th>
+                    <th>代表項目</th>
+                    <th>照護與控制意義</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>A1c（醣化血紅素，HbA1c）</td>
+                    <td>血糖控制重要指標；反映最近兩、三個月來血糖控制情形。一般人約 4～6% 之間，糖尿病人最好控制在 7% 以下；顯示 8% 通常代表過去三個月血糖值經常達警戒值 200 以上。</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>Blood Pressure（血壓）</td>
+                    <td>嚴格控管血壓，協助降低心血管疾病威脅。</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>Cholesterol（膽固醇）</td>
+                    <td>嚴格控管膽固醇（血脂肪），協助免除心血管疾病威脅。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <span class="placeholder-note">正式指標資料與連結待專案資料確認後補入。</span>
+          </div>
         </section>
 
         <section class="content-section" id="education">
           <h2>健康教育</h2>
           <div class="education-grid">
             <article class="education-card">
-              <h3>血糖管理</h3>
-              <p>遵循醫囑進行血糖自我監測與記錄，熟悉低血糖與高血糖之症狀與緊急處理原則，定期回診追蹤。</p>
+              <h3>認識醣化血紅素（HbA1c）</h3>
+              <p>
+                血紅素是紅血球中將氧氣帶到身體各處的重要蛋白質。血液中的葡萄糖進入紅血球後附著在血紅素上、不易脫落，直到紅血球衰老破壞（平均壽命 120 天）。血糖越高，醣化血紅素百分比越高，可反映近兩、三個月的血糖控制狀況。
+              </p>
+            </article>
+            <article class="education-card">
+              <h3>血糖管理與監測</h3>
+              <p>
+                依醫療團隊建議進行血糖監測與回診，並記錄有助於追蹤的健康資訊。單次血糖會受飲食、運動、藥物、疾病因素影響而隨時上下起伏，醣化血紅素則較能代表長時間控制狀況。
+              </p>
             </article>
             <article class="education-card">
               <h3>飲食與活動</h3>
-              <p>落實均衡飲食原則，固定醣類份量、多選高纖低油食物；每週維持至少5次、每次30分鐘以上的規律有氧運動。</p>
+              <p>建立規律且適合個人狀況的飲食及身體活動習慣，必要時請醫療團隊提供個別建議。</p>
             </article>
             <article class="education-card">
               <h3>用藥與追蹤</h3>
-              <p>確實依照醫師處方使用口服抗糖尿病藥或注射胰島素，切勿自行停藥或調整劑量，並定期檢查眼底、腎功能與血脂肪。</p>
+              <p>依照醫囑使用藥物，不自行停藥或調整劑量；有疑問時向醫療人員確認。</p>
             </article>
             <article class="education-card">
-              <h3>足部與口腔</h3>
-              <p>落實每日足部自我檢查與溫水清潔，留意神經與血管病變風險；配合貝氏刷牙法與定期口腔檢查，預防牙周病與足部潰瘍。</p>
+              <h3>足部與器官照護</h3>
+              <p>留意足部是否有傷口、紅腫或異常變化，並重視視力、腎臟與心血管健康追蹤，若發現問題應及早尋求醫療評估。</p>
             </article>
           </div>
         </section>
@@ -150,51 +250,60 @@
         <section class="content-section" id="visit">
           <h2>就醫與照護提醒</h2>
           <ul class="check-list">
-            <li>回診時請攜帶血糖紀錄手冊及目前使用的藥物資訊，供醫師作為調整治療方案的參考。</li>
-            <li>若出現身體不適、血糖劇烈波動、嘔吐腹瀉或疑似低血糖、高血糖急症時，應依指示處理並儘快求醫。</li>
-            <li>糖尿病患因神經及血管病變易使感覺降低、受傷不自知，若有足部傷口癒合過慢、紅腫疼痛或持續性疼痛時，應儘早尋求醫師專業診治。</li>
+            <li>回診時可攜帶血糖紀錄及目前使用的藥物資訊。</li>
+            <li>若出現不適或血糖異常，應依醫療團隊提供的指示處理。</li>
+            <li>每個人的治療目標可能不同，請與醫療團隊討論適合自己的照護計畫。</li>
           </ul>
         </section>
-	<section class="content-section" id="info">
-	  <h2>其他資訊</h2>
-	    <h3>國內相關網站</h3>
-	    <ul>
-	      <li>
-	        <a href="https://www.endo-dm.org.tw/dia/" target="_blank" rel="noopener noreferrer">
-	          中國糖尿病學會
-	        </a>
-	      </li>
-	      <li>
-	        <a href="https://www.tacd.org.tw/ehc-tacd/s/index/htm" target="_blank" rel="noopener noreferrer">
-	          台灣基層糖尿病協會
-	        </a>
-	      </li>
-	      <li>
-	        <a href="https://www.tade.org.tw/" target="_blank" rel="noopener noreferrer">
-	          中華民國糖尿病衛教學會
-	        </a>
-	      </li>
-	      <li>
-	        <a href="https://www.dmcare.org.tw/" target="_blank" rel="noopener noreferrer">
-	          財團法人糖尿病關懷基金會
-	        </a>
-	      </li>
-	    </ul>
 
-	    <h3>國外相關網站</h3>
-	    <ul>
-	      <li>
-	        <a href="https://diabetes.org/" target="_blank" rel="noopener noreferrer">
-	          美國糖尿病學會
-	        </a>
-	      </li>
-	    </ul>
+        <section class="content-section" id="info">
+          <h2>其他資訊</h2>
+
+          <h3>國內相關網站</h3>
+          <ul>
+            <li>
+              <a href="https://www.endo-dm.org.tw/dia/"
+                 target="_blank" rel="noopener noreferrer">
+                中華民國糖尿病學會
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tacd.org.tw/ehc-tacd/s/index/htm"
+                 target="_blank" rel="noopener noreferrer">
+                台灣基層糖尿病協會
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tade.org.tw/"
+                 target="_blank" rel="noopener noreferrer">
+                中華民國糖尿病衛教學會
+              </a>
+            </li>
+            <li>
+              <a href="https://www.dmcare.org.tw/"
+                 target="_blank" rel="noopener noreferrer">
+                財團法人糖尿病關懷基金會
+              </a>
+            </li>
+          </ul>
+
+          <h3>國外相關網站</h3>
+          <ul>
+            <li>
+              <a href="https://diabetes.org/"
+                 target="_blank" rel="noopener noreferrer">
+                美國糖尿病學會（ADA）
+              </a>
+            </li>
+          </ul>
         </section>
-		<div class="back-link">
+
+        <div class="back-link">
           <a class="button button-secondary" href="../index.html">返回首頁</a>
         </div>
       </div>
     </div>
   </main>
+
 </body>
 </html>

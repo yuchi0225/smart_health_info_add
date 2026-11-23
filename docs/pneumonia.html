@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="認識肺炎、典型症狀、三大肺炎類型（社區性肺炎、院內感染肺炎、健康照護相關肺炎）、高危險族群、預防方式及相關衛教資訊。">
+  <title>肺炎｜醫療品質與健康衛教資訊</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- 肺炎頁面專屬柔和米黃色系 -->
+  <style>
+    :root {
+      --primary: #B88A38;
+      --primary-dark: #8F661E;
+      --primary-light: #FBF5E6;
+      --text: #3A3529;
+      --muted: #756D59;
+      --border: #EAE0C8;
+      --background: #FEFDF9;
+    }
+
+    /* 主視覺 */
+    .pneumonia-hero {
+      background: linear-gradient(120deg, #8F661E, #B88A38);
+      color: #ffffff;
+    }
+
+    .pneumonia-hero h1 {
+      color: #ffffff;
+    }
+
+    .pneumonia-hero .eyebrow {
+      color: #FBF5E6;
+    }
+
+    .pneumonia-hero .breadcrumb,
+    .pneumonia-hero .breadcrumb a {
+      color: #ffffff;
+    }
+
+    .pneumonia-hero .container > p {
+      color: #ffffff;
+    }
+
+    /* 資訊卡片 */
+    .info-card,
+    .education-card {
+      border-color: #EAE0C8;
+    }
+
+    .info-card h3,
+    .education-card h3 {
+      color: #8F661E;
+    }
+
+    /* 側邊導覽 */
+    .side-nav a:hover,
+    .side-nav a:focus {
+      color: #8F661E;
+    }
+
+    /* 一般提醒（統一柔和米黃色系） */
+    .pneumonia-note {
+      padding: 15px 18px;
+      margin-top: 18px;
+      background: #FBF5E6;
+      border-left: 4px solid #B88A38;
+      border-radius: 8px;
+      color: #3A3529;
+      line-height: 1.8;
+    }
+
+    /* 表格檢查與修正 */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 16px;
+    }
+
+    .table-wrapper table {
+      min-width: 560px;
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      box-sizing: border-box;
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid #EAE0C8;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      box-sizing: border-box;
+      line-height: 1.7;
+    }
+
+    .table-wrapper th {
+      background: #FBF5E6;
+      color: #8F661E;
+      font-weight: 700;
+    }
+
+    .table-wrapper th:nth-child(1),
+    .table-wrapper td:nth-child(1) {
+      width: 24%;
+    }
+
+    .table-wrapper th:nth-child(2),
+    .table-wrapper td:nth-child(2) {
+      width: 44%;
+    }
+
+    .table-wrapper th:nth-child(3),
+    .table-wrapper td:nth-child(3) {
+      width: 32%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- 主視覺 -->
+    <section class="disease-hero pneumonia-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href="../index.html">首頁</a>／肺炎
+        </p>
+
+        <p class="eyebrow">DISEASE &amp; HEALTH EDUCATION INFORMATION</p>
+
+        <h1>肺炎</h1>
+
+        <p>
+          認識肺炎的致病原因、典型症狀與三大分類，
+          了解高危險族群與日常預防保健方式，
+          協助自己與家人及早辨識症狀並做好防護。
+        </p>
+      </div>
+    </section>
+
+    <div class="container page-layout">
+
+      <!-- 側邊目錄 -->
+      <aside class="side-nav">
+        <h2>本頁內容</h2>
+        <a href="#overview">疾病介紹</a>
+        <a href="#quality">醫療品質資訊</a>
+        <a href="#education">健康教育</a>
+        <a href="#visit">就醫與照護提醒</a>
+        <a href="#info">其他資訊</a>
+      </aside>
+
+      <div class="page-content">
+
+        <!-- 一、疾病介紹 -->
+        <section class="content-section" id="overview">
+
+          <h2>疾病介紹</h2>
+
+          <p>
+            肺炎是單側或雙側的肺受到微生物的感染而發炎，致病微生物可能包括細菌、病毒、黴菌和寄生蟲等，最常見的是病毒及細菌感染。
+            微生物會藉由口、鼻、眼而進入身體裡面，若此時身體免疫防衛系統無法抵抗，微生物可能會侵入呼吸系統進而產生肺炎，嚴重時可能會危害生命。
+          </p>
+
+          <p>
+            肺炎的症狀從輕度至重度差異相當大，影響症狀嚴重程度的因素很多，例如感染菌種類型、年齡、感染前的健康狀態等都會影響肺炎的嚴重程度。
+          </p>
+
+          <div class="info-card">
+            <h3>典型肺炎症狀</h3>
+
+            <ul>
+              <li><strong>發燒與發冷：</strong>體溫升高或出現畏寒發冷現象。</li>
+              <li><strong>咳嗽與痰液變化：</strong>出現咳嗽，且痰液變多、變黃、變濃。</li>
+              <li><strong>胸痛與呼吸變化：</strong>呼吸或咳嗽時胸痛，可能伴隨呼吸困難。</li>
+              <li><strong>全身與精神狀態：</strong>容易感到疲倦，或出現不安等表現。</li>
+            </ul>
+          </div>
+
+          <div class="pneumonia-note">
+            <strong>小提醒：</strong>
+            肺炎症狀輕重不一，且受感染菌種、年齡與原有健康狀況影響，若出現疑似症狀或呼吸不適，應及早尋求醫療評估。
+          </div>
+
+        </section>
+
+        <!-- 二、醫療品質資訊 -->
+        <section class="content-section" id="quality">
+
+          <h2>醫療品質資訊</h2>
+
+          <div class="info-card">
+
+            <h3>肺炎三大類型與感染情境整理</h3>
+
+            <p>
+              肺炎的類型依致病的病原體類型及病人感染時所處環境可分為三大類：社區性肺炎、院內感染肺炎及健康照護相關肺炎。
+              了解不同類型的發生情境與常見病原，有助於臨床評估與照護防護。
+            </p>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>肺炎類型</th>
+                    <th>發生情境與定義</th>
+                    <th>常見病原與高風險對象</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>社區性肺炎<br>（Community-acquired pneumonia）</td>
+                    <td>
+                      在社區等非醫療院所環境內感染的肺炎，是最常見的肺炎類型。細菌性感染可使肺臟出現化膿性滲出物、肺泡空腔阻塞，引起肺葉性或支氣管性肺炎。
+                    </td>
+                    <td>
+                      細菌性常見肺炎鏈球菌、非典型致病菌（如黴漿菌、披衣菌）或流行感冒嗜血桿菌；病毒性包括流感病毒、呼吸道融合病毒、腺病毒、新型冠狀病毒（COVID-19）；非細菌性如黴菌或原蟲肺炎（常見於免疫力較弱或慢性病者）。
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>院內感染肺炎<br>（Hospital-acquired pneumonia）</td>
+                    <td>
+                      指在入院 48 小時後所發生的肺炎，或前次住院出院後 14 天內所發生之肺炎（例如手術後產生的肺炎）。
+                    </td>
+                    <td>
+                      最常出現於使用呼吸器的病人（呼吸器相關肺炎，Ventilator-associated pneumonia）或入住加護病房因而感染肺炎的病人。
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>健康照護相關肺炎<br>（Health care-associated pneumonia）</td>
+                    <td>
+                      發病前 90 日內曾在急性病院住院大於 2 天以上、住在安養院或長期照護機構、30 日內曾接受針劑抗生素、化學治療或傷口照護，或長期進出透析中心接受洗腎治療者所得到的肺炎。
+                    </td>
+                    <td>
+                      涵蓋近期住院、長照機構住民、接受侵入性或密集照護及長期洗腎族群。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="placeholder-note">
+              ※ 正式醫療品質指標數值與院所統計連結待專案資料確認後補入（目前本頁依據提供之肺炎衛教資料整理三大類型與照護重點，未自行推估或編造數據）。
+            </p>
+
+          </div><br>
+
+          <div class="info-card">
+
+            <h3>高危險族群與感染防護重點</h3>
+
+            <p>
+              幼兒、老人或免疫系統較弱的人為肺炎之常見高危險族群，微生物可經由口、鼻、眼進入體內並侵入呼吸系統，嚴重時可能危害生命。
+            </p>
+
+            <div class="pneumonia-note">
+              <strong>防護提醒：</strong>
+              高危險族群與照護者應落實日常衛生與疫苗預防，並密切留意發燒、咳嗽、痰液變黃變濃、胸痛或呼吸困難等變化。
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- 三、健康教育 -->
+        <section class="content-section" id="education">
+
+          <h2>健康教育</h2>
+
+          <div class="education-grid">
+
+            <article class="education-card">
+              <h3>勤洗手與避免觸摸口眼鼻</h3>
+
+              <p>
+                微生物會藉由口、鼻、眼進入身體裡面。日常生活中應建議勤洗手，不要用手觸摸口、眼和鼻，降低病原進入呼吸系統的機會。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>戴口罩與保持社交距離</h3>
+
+              <p>
+                流感流行期應避免出入公共場所，並保持社交距離、戴口罩，減少飛沫與呼吸道微生物傳播風險。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>接種流感及肺炎鏈球菌疫苗</h3>
+
+              <p>
+                建議接種流感及肺炎鏈球菌疫苗等預防措施，協助提升對常見呼吸道致病原的防護力。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>加強高危險族群照護</h3>
+
+              <p>
+                幼兒、老人、免疫系統較弱者，以及住院、洗腎或長照機構族群更容易受到感染，應特別重視日常衛生、症狀觀察與及早就醫。
+              </p>
+            </article>
+
+          </div>
+
+        </section>
+
+        <!-- 四、就醫與照護提醒 -->
+        <section class="content-section" id="visit">
+
+          <h2>就醫與照護提醒</h2>
+
+          <ul class="check-list">
+
+            <li>
+              <b>留意典型肺炎症狀：</b>
+              若出現發燒、發冷、咳嗽、呼吸或咳嗽時胸痛、痰液變多變黃變濃、疲倦或呼吸困難、不安等症狀，應及早就醫評估。
+            </li>
+
+            <li>
+              <b>重視高危險族群變化：</b>
+              幼兒、老人及免疫系統較弱者感染後嚴重程度差異大，嚴重時可能危害生命，應密切觀察病況變化。
+            </li>
+
+            <li>
+              <b>住院、洗腎與長照族群防護：</b>
+              曾近期住院、使用呼吸器、入住加護病房、接受化療或洗腎，或住在安養院／長照機構者，應配合醫療與照護團隊落實感染預防。
+            </li>
+
+            <li>
+              <b>持續落實日常預防：</b>
+              維持勤洗手、不觸摸口／眼／鼻、戴口罩、保持社交距離與疫苗接種等習慣，降低感染風險。
+            </li>
+
+          </ul>
+
+          <div class="pneumonia-note">
+            <strong>照護提醒：</strong>
+            肺炎的致病原與嚴重程度因人而異，實際診斷與治療請務必由醫師評估並依醫囑執行。
+          </div>
+
+        </section>
+
+        <!-- 五、其他資訊 -->
+        <section class="content-section" id="info">
+
+          <h2>其他資訊</h2>
+
+          <h3>國內相關網站</h3>
+
+          <ul>
+            <li>
+              <a href="https://www.cdc.gov.tw/"
+                 target="_blank" rel="noopener noreferrer">
+                衛生福利部疾病管制署－傳染病與防疫專題
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.idsroc.org.tw/magazine/health_info.asp?peo_type=1&amp;id=24"
+                 target="_blank" rel="noopener noreferrer">
+                台灣感染症醫學會－台灣肺炎診治指引
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+        <div class="back-link">
+          <a class="button button-secondary" href="../index.html">返回首頁</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

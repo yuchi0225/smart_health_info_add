@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="認識急性心肌梗塞、黃金治療評估照護品質指標、預防危險因子與飲食控制、心臟病四大用藥藥理作用及相關醫學會衛教資訊。">
+  <title>急性心肌梗塞｜醫療品質與健康衛教資訊</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- 急性心肌梗塞頁面專屬配色（深玫瑰粉色系） -->
+  <style>
+    :root {
+      --primary: #C74B73;
+      --primary-dark: #8F294B;
+      --primary-light: #FCE8EF;
+      --text: #3B2E33;
+      --muted: #78636A;
+      --border: #EED0DA;
+      --background: #FCF6F8;
+    }
+
+    /* 主視覺：深粉色漸層 */
+    .ami-hero {
+      background: linear-gradient(135deg, #9C3155, #C74B73);
+      color: #FFFFFF;
+    }
+
+    .ami-hero h1 {
+      color: #FFFFFF;
+    }
+
+    .ami-hero .eyebrow {
+      color: #FFD6E4;
+    }
+
+    .ami-hero .breadcrumb {
+      color: #FCE8EF;
+    }
+
+    .ami-hero .breadcrumb a {
+      color: #FFFFFF;
+    }
+
+    .ami-hero .container > p:not(.breadcrumb):not(.eyebrow) {
+      color: #FFF4F7;
+    }
+
+    /* 側邊導覽 */
+    .side-nav a:hover,
+    .side-nav a:focus {
+      color: #8F294B;
+    }
+
+    /* 資訊卡片與衛教卡片 */
+    .info-card,
+    .education-card {
+      border-color: #EED0DA;
+    }
+
+    .info-card h3,
+    .education-card h3 {
+      color: #8F294B;
+    }
+
+    /* 黃金時間重點提醒框 */
+    .ami-highlight-note {
+      padding: 15px 18px;
+      margin: 16px 0;
+      background: #FDF0F4;
+      border-left: 4px solid #C74B73;
+      border-radius: 8px;
+      color: #5C293B;
+      line-height: 1.8;
+    }
+
+    /* 警示提醒框 */
+    .warning-note {
+      padding: 15px 18px;
+      margin-top: 16px;
+      background: #FFF6ED;
+      border-left: 4px solid #D97736;
+      border-radius: 8px;
+      color: #5C3D28;
+      line-height: 1.8;
+    }
+
+    /* 表格美化與響應式設定 */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #FFFFFF;
+    }
+
+    .table-wrapper table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .table-wrapper thead {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+
+    .table-wrapper th {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .table-wrapper th:first-child,
+    .table-wrapper td:first-child {
+      width: 30%;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .table-wrapper tbody tr:nth-child(even) {
+      background-color: var(--background);
+    }
+
+    .table-wrapper tbody tr:hover {
+      background-color: #FAE3EB;
+    }
+
+    .table-wrapper tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .content-section ul li {
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="disease-hero ami-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../index.html">首頁</a>／急性心肌梗塞</p>
+        <p class="eyebrow">DISEASE INFORMATION</p>
+        <h1>急性心肌梗塞</h1>
+        <p>把握治療黃金時間、認識重要照護品質指標與日常危險因子預防，守護心血管健康。</p>
+      </div>
+    </section>
+
+    <div class="container page-layout">
+      <aside class="side-nav">
+        <h2>本頁內容</h2>
+        <a href="#overview">疾病介紹</a>
+        <a href="#quality">醫療品質資訊</a>
+        <a href="#prevention">預防危險因子</a>
+        <a href="#medication">心臟病用藥藥理作用</a>
+        <a href="#info">其他資訊</a>
+      </aside>
+
+      <div class="page-content">
+        <!-- 疾病介紹 -->
+        <section class="content-section" id="overview">
+          <h2>疾病介紹</h2>
+          <p>
+            「心肌梗塞」定義是心臟肌肉細胞因其供給營養及氧氣的冠狀動脈，突發幾近完全或完全阻塞，使得供給心肌的血流中斷；若持續阻塞，則會導致心肌缺氧受損或壞死，進而使得心臟功能減低。若短時間內無法打開血流受阻的血管，將造成心臟肌肉細胞的永久損傷甚至猝死，並產生後續併發症（如惡性心律不整、心臟衰竭等），更可能造成死亡或不可逆的傷害。
+          </p>
+          <p>
+            近幾年來心臟疾病已躍居台灣十大死因前二名，而冠狀動脈心臟病又以併發急性心肌梗塞最為可怕。隨著飲食逐漸西化及現代人生活節奏緊張，急性心肌梗塞的發生率不僅日漸升高，且發生年齡有年輕化趨勢。
+          </p>
+          <div class="ami-highlight-note">
+            <strong>核心治療原則：</strong>急性心肌梗塞治療首重<strong>把握黃金時間</strong>，儘早打通阻塞血管以救回瀕臨壞死的心肌、減少心臟受損範圍，避免猝死最為重要。
+          </div>
+        </section>
+
+        <!-- 醫療品質資訊 -->
+        <section class="content-section" id="quality">
+          <h2>醫療品質資訊</h2>
+          <div class="info-card">
+            <h3>急性心肌梗塞重要評估照護品質指標</h3>
+            <p>
+              有關心肌梗塞的診斷流程與治療策略，在實證醫學上已有明確的規範指引，主要目的在於減少病人猝死與併發症，並透過住院期間治療與衛教提升整體照護品質：
+            </p>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>評估照護項目</th>
+                    <th>臨床執行內容與品質意義</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. 關鍵診斷與血脂檢驗</td>
+                    <td>完成<strong>心電圖</strong>、<strong>特定心肌酵素</strong>及<strong>低密度脂蛋白膽固醇（LDL-C）</strong>的檢驗，以迅速確診並評估心血管風險。</td>
+                  </tr>
+                  <tr>
+                    <td>2. 實證治療藥物給予</td>
+                    <td>依臨床指引適時給予四大類核心藥物：(1) 阿斯匹靈（Aspirin）、(2) ADP 受體拮抗劑（如 Clopidogrel 類）、(3) 乙型交感神經受體阻斷劑（β-Blocker）、(4) 血管收縮素轉化酶抑制劑（ACE inhibitor 或 ARB）。</td>
+                  </tr>
+                  <tr>
+                    <td>3. 介入性心導管治療</td>
+                    <td>於黃金時間內進行緊急介入性心導管手術，儘早打通阻塞的冠狀動脈，搶救瀕臨壞死的心肌。</td>
+                  </tr>
+                  <tr>
+                    <td>4. 住院衛教與併發症預防</td>
+                    <td>住院期間落實重要治療追蹤與危險因子衛教，降低出院後再發作及心臟衰竭等併發症風險。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 預防危險因子 -->
+        <section class="content-section" id="prevention">
+          <h2>預防心肌梗塞的危險因子</h2>
+          <p>
+            養成「控制、均衡、制止、運動、定期檢查」的健康生活習慣，能有效降低冠狀動脈硬化與急性發作的風險：
+          </p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>預防面向</th>
+                  <th>日常執行標準與建議</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>飲食定時定量、維持理想體重</td>
+                  <td>飲食依照計劃，攝取均衡且多樣化。肥胖者建議減重至理想範圍內，維持理想的身體質量指數（BMI）：<strong>18.5 ≤ BMI ≤ 24</strong>。</td>
+                </tr>
+                <tr>
+                  <td>低鹽飲食</td>
+                  <td>衛生福利部建議每日鹽分攝取 <strong>6 公克以下</strong>。</td>
+                </tr>
+                <tr>
+                  <td>避免飲酒（戒菸酒）</td>
+                  <td>男性每天不宜超過 <strong>2 個酒精當量</strong>，女性每天不宜超過 <strong>1 個酒精當量</strong>（每個酒精當量為 15 公克 ＝ 啤酒 360 毫升），並應完全戒菸。</td>
+                </tr>
+                <tr>
+                  <td>降低膽固醇攝取</td>
+                  <td>飽和性脂肪攝取降至每日總熱量的 <strong>7% 以下</strong>，總膽固醇攝取降至每天 <strong>200 毫克以下</strong>。</td>
+                </tr>
+                <tr>
+                  <td>少吃精緻醣類</td>
+                  <td>避免精緻甜食、各式糖果、糕餅及水果罐頭等高糖分加工食品。</td>
+                </tr>
+                <tr>
+                  <td>多攝取纖維</td>
+                  <td>多選用富含纖維質的食物，例如新鮮蔬菜、水果及全穀類等。</td>
+                </tr>
+                <tr>
+                  <td>規律運動與定期檢查</td>
+                  <td>依醫師評估維持適度規律運動，並定期追蹤血壓、血糖、血脂與心電圖變化。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 心臟病用藥藥理作用 -->
+        <section class="content-section" id="medication">
+          <h2>心臟病用藥藥理作用</h2>
+          <p>急性心肌梗塞治療與預防復發常見之四大類核心藥物機轉與臨床注意事項如下：</p>
+
+          <div class="education-grid">
+            <article class="education-card">
+              <h3>1. 阿斯匹靈（Aspirin）</h3>
+              <p><strong>成分：</strong>Acetylsalicylic acid（乙醯水楊酸）</p>
+              <p>
+                <strong>藥理作用：</strong>抑制環氧化酶（COX）活性，使血小板無法生成具增強血小板凝集與血管收縮作用的血栓素（TXA2），進而抑制血小板凝集與血栓形成。
+              </p>
+              <p>
+                <strong>臨床應用：</strong>無禁忌症者應自第一天起開始使用以快速抗血小板、降低死亡率；使用期間需留意消化道或身體出血性風險。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>2. ADP 受體拮抗劑</h3>
+              <p><strong>成分：</strong>ADP receptor antagonists（如 Clopidogrel 類）</p>
+              <p>
+                <strong>藥理作用：</strong>選擇性抑制血小板上 ADP 受體與 ADP 結合，阻斷 GP IIb/IIIa 受體活化作用，防止血小板相互連結形成凝集體。
+              </p>
+              <p>
+                <strong>臨床應用：</strong>急性期（尤其是經心導管放置冠狀動脈支架者）宜與 Aspirin 併用；亦適用於對其他抗血小板藥物過敏或易致消化道潰瘍之患者。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>3. 乙型交感神經受體阻斷劑（β-Blocker）</h3>
+              <p>
+                <strong>藥理作用：</strong>作用於心臟 β 腎上腺素受體使心跳變慢、降低心輸出量；同時減少腎臟釋出腎素（renin）並抑制中樞腎上腺素分泌，達到降壓效果。
+              </p>
+              <p>
+                <strong>臨床應用：</strong>可降低心跳速率、減少心肌需氧量、緩解心絞痛並減少心肌損傷惡化，證實能有效減低心肌梗塞住院病人死亡率。
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>4. ACEI 或 ARB 類藥物</h3>
+              <p><strong>成分：</strong>血管收縮素轉化酶抑制劑（ACEI）／第二型血管收縮素受體阻斷劑（ARB）</p>
+              <p>
+                <strong>藥理作用：</strong>ACEI 可抑制血管張力素轉化酶，使 Angiotensin I 無法轉為強效收縮血管的 Angiotensin II；ARB 則直接阻斷 Angiotensin II 與受體結合，降低周邊血管阻力。
+              </p>
+              <p>
+                <strong>臨床應用：</strong>可使血管舒張、降低血壓並減少心臟負荷，降低梗塞後心衰竭及死亡率；惟<strong>不建議用於低血壓病人</strong>。
+              </p>
+            </article>
+          </div>
+
+          <div class="warning-note">
+            <strong>用藥安全提醒：</strong>上述心臟病藥物均須遵照心臟專科醫師指示規律服用，切勿自行停藥（特別是放置心導管支架後之雙重抗血小板藥物，擅自停藥可能引發急性支架內血栓）；若出現異常出血、黑便、嚴重頭暈或心跳過慢，請立即回診評估。
+          </div>
+        </section>
+
+        <!-- 其他資訊 -->
+        <section class="content-section" id="info">
+          <h2>其他資訊</h2>
+          <h3>國內相關網站</h3>
+          <ul>
+            <li>
+              <a href="http://www.tscimd.org.tw/" target="_blank" rel="noopener noreferrer">
+                台灣介入性心臟血管醫學會
+              </a>
+            </li>
+            <li>
+              <a href="http://www.tsim.org.tw/tc/main.asp" target="_blank" rel="noopener noreferrer">
+                台灣內科醫學會
+              </a>
+            </li>
+            <li>
+              <a href="http://www.tsoc.org.tw/" target="_blank" rel="noopener noreferrer">
+                中華民國心臟學會
+              </a>
+            </li>
+            <li>
+              <a href="https://www.sem.org.tw/tsem/" target="_blank" rel="noopener noreferrer">
+                台灣急診醫學會
+              </a>
+            </li>
+            <li>
+              <a href="https://www.seccm.org.tw/" target="_blank" rel="noopener noreferrer">
+                中華民國急救加護醫學會
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="back-link">
+          <a class="button button-secondary" href="../index.html">返回首頁</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
